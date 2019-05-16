@@ -50,14 +50,14 @@ backstretch:
   duration: 40000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120516.jpeg  
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120523.jpeg
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120522.jpeg
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120521.jpeg
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120520.jpeg
-    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120518.jpeg
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120519.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120518.jpeg
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120517.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120516.jpeg  
     - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120515.jpeg
 
 
