@@ -57,6 +57,11 @@
 
 <% if (theme.backstretch && (theme.backstretch.images || page.images)) { %>
   <% var imgs = theme.backstretch.images || page.images; %>
+  <% for (let i = 1; i < imgs.length; i++) {
+       const random = Math.floor(Math.random() * (i + 1));
+       [imgs[i], imgs[random]] = [imgs[random], imgs[i]];
+     }
+    %>
   <% var posi = null;
   if (theme.backstretch.position == 'cover') {
     posi = '.cover';

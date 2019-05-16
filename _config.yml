@@ -6,9 +6,9 @@ info:
     css:
       # style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.4.19/css/style.css
     js:
-      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.4.19/js/app.js
-      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.4.19/js/search.js
-      volantis: https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1/js/volantis.min.js
+      # app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.4.19/js/app.js
+      # search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.4.19/js/search.js
+      # volantis: https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1/js/volantis.min.js
 
 
 
@@ -46,11 +46,20 @@ updated_date_format: 'll' # 文章更新日期的格式
 
 # 幻灯片
 backstretch:
-  position: cover  # cover: 封面背景   full: 整个网页背景
-  duration: 6000 # 持续时间（毫秒）
+  position: full  # cover: 封面背景   full: 整个网页背景
+  duration: 40000 # 持续时间（毫秒）
   fade: 2500     # 渐变（毫秒）
   images:
-    - https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120516.jpeg  
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120523.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120522.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120521.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120520.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120518.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120519.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120517.jpeg
+    - https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516120515.jpeg
+
 
 
 
@@ -58,70 +67,66 @@ backstretch:
 # page的封面
 cover:
   scheme: search    # 后期将会提供多种封面方案
-  # height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
-  title: "Material X"
-  # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
+  height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
+  # title: "Material X"
+  logo: https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/fat_cat_header_small.png    # logo和title只显示一个，若同时设置，则只显示logo
   # search_placeholder: '搜索'
   # 主页封面菜单
   features:
-    - name: 博文
-      icon: fas fa-rss
+    - name: 博客
+      icon: fas fa-beer
       url: /
-    - name: 项目
-      icon: fas fa-code-branch
-      url: projects/
-    - name: 友链
-      icon: fas fa-link
-      url: friends/
-      rel: nofollow
-    - name: 关于
-      icon: fas fa-info-circle
-      url: about/
-      rel: nofollow
+    - name: 分类
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags
+      url: tags/
+    - name: 归档
+      icon: fas fa-archive
+      url: archives/
+    # - name: 项目
+    #   icon: fas fa-code-branch
+    #   url: projects/
+    # - name: 友链
+    #   icon: fas fa-link
+    #   url: friends/
+    #   rel: nofollow
+    # - name: 关于
+    #   icon: fas fa-info-circle
+    #   url: about/
+    #   rel: nofollow
 
 
 # 桌面端导航栏菜单
 menu_desktop:
-  - name: 示例
-    icon: fas fa-grin
+  - name: 博客
+    icon: fas fa-beer
     url: /
   - name: 分类
     icon: fas fa-folder-open
-    url: blog/categories/
-    rel: nofollow
+    url: categories/
   - name: 标签
-    icon: fas fa-hashtag
-    url: blog/tags/
-    rel: nofollow
+    icon: fas fa-tags
+    url: tags/
   - name: 归档
     icon: fas fa-archive
-    url: blog/archives/
-    rel: nofollow
+    url: archives/
 
 # 手机端导航菜单（从右上角的按钮点击展开）
 menu_mobile:
-  - name: 近期文章
-    icon: fas fa-clock
+  - name: 博客
+    icon: fas fa-beer
     url: /
-  - name: 文章归档
+  - name: 分类
+    icon: fas fa-folder-open
+    url: categories/
+  - name: 标签
+    icon: fas fa-tags
+    url: tags/
+  - name: 归档
     icon: fas fa-archive
-    url: blog/archives/
-    rel: nofollow
-  - name: 开源项目
-    icon: fas fa-code-branch
-    url: projects/
-  - name: 我的友链
-    icon: fas fa-link
-    url: friends/
-    rel: nofollow
-  - name: 主题文档
-    icon: fas fa-book
-    url: https://xaoxuu.com/wiki/material-x/
-    rel: nofollow
-  - name: 关于小站
-    icon: fas fa-info-circle
-    url: about/
-    rel: nofollow
+    url: archives/
 
 # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
 # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
@@ -136,70 +141,68 @@ body: [article, comments]
 # 侧边栏小部件，默认按下面给定的顺序全部显示，文章中还可以自定义显示一部分以及顺序
 sidebar:
   - widget: author
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+    avatar: https://raw.githubusercontent.com/Fongim/personal_blog_image/master/image/20190516125601.jpg
     social: true
   - widget: toc
-  - widget: grid
-    icon: fas fa-map-signs
-    title: 站内导航
-    rows:
-      - name: 近期文章
-        icon: fas fa-clock
-        url: /
-      - name: 文章归档
-        icon: fas fa-archive
-        url: blog/archives/
-        rel: nofollow
-      - name: 开源项目
-        icon: fas fa-code-branch
-        url: projects/
-      - name: 我的友链
-        icon: fas fa-link
-        url: friends/
-        rel: nofollow
-      - name: 主题文档
-        icon: fas fa-book
-        url: https://xaoxuu.com/wiki/material-x/
-        rel: nofollow
-      - name: 关于小站
-        icon: fas fa-info-circle
-        url: about/
-        rel: nofollow
+  # - widget: grid
+  #   icon: fas fa-map-signs
+  #   title: 站内导航
+  #   rows:
+  #     - name: 近期文章
+  #       icon: fas fa-clock
+  #       url: /
+  #     - name: 文章归档
+  #       icon: fas fa-archive
+  #       url: blog/archives/
+  #       rel: nofollow
+  #     - name: 开源项目
+  #       icon: fas fa-code-branch
+  #       url: projects/
+  #     - name: 我的友链
+  #       icon: fas fa-link
+  #       url: friends/
+  #       rel: nofollow
+  #     - name: 主题文档
+  #       icon: fas fa-book
+  #       url: https://xaoxuu.com/wiki/material-x/
+  #       rel: nofollow
+  #     - name: 关于小站
+  #       icon: fas fa-info-circle
+  #       url: about/
+  #       rel: nofollow
   - widget: category
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/categories/
+      url: categories/
       rel: nofollow
   - widget: tagcloud
     icon: fas fa-fire
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/tags/
+      url: tags/
       rel: nofollow
-  # - widget: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
-  - widget: music
-    icon: fas fa-compact-disc
-    title: "最近在听"
-    more:
-      icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
-      rel: external nofollow noopener noreferrer
-      target: _blank
-    server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
-    type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
-    id: 2615636388     # 歌曲/专辑/歌单 ID
+  - widget: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
+  # - widget: music
+  #   icon: fas fa-compact-disc
+  #   title: "最近在听"
+  #   more:
+  #     icon: far fa-heart
+  #     url: https://music.163.com/#/user/home?id=63035382
+  #     rel: external nofollow noopener noreferrer
+  #     target: _blank
+  #   server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+  #   type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
+  #   id: 2615636388     # 歌曲/专辑/歌单 ID
 
 
 # 社交信息
 social:
-  - icon: fas fa-rss
-    url: atom.xml
-  - icon: fas fa-envelope
-    url: mailto:me@xaoxuu.com
   - icon: fab fa-github
-    url: https://github.com/xaoxuu
-  - icon: fas fa-headphones-alt
-    url: https://music.163.com/#/user/home?id=63035382
+    url: https://github.com/Fongim
+  - icon: fas fa-envelope
+    url: mailto:me@paaatrick.com
+  - icon: fab fa-contao
+    url: https://me.csdn.net/fongim
 
 
 # 分享按钮
@@ -211,15 +214,15 @@ share:
   - id: qzone
     name: QQ空间
     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png
-  # - id: qrcode
-  #   name: 微信
-  #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
+  - id: qrcode
+    name: 微信
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
   - id: weibo
     name: 微博
     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png
-  # - id: qrcode
-  #   name: QRcode
-  #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
+  - id: qrcode
+    name: QRcode
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
 
 
 
